@@ -1,2 +1,2 @@
-# Giorgi-Acharadze-Davaleba-12-13
+# Giorgi-Acharadze-Davaleba-12
 Created google clone page with scss.
