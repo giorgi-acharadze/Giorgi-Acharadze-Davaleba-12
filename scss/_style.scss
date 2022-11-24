@@ -1,261 +1,261 @@
 .section-1 {
-  background-color: $color01;
-  .sec-1-box {
-    height: $size07;
-    @include g-flex (flex, flex-end, center);
-    padding: 6px;
-     h4 {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: $fsize01;
-      color: $color09;
-      cursor: pointer;
-      &:hover {
-        text-decoration: underline;
-      }
+    background-color: $color01;
+    .sec-1-box {
+        height: $size07;
+        @include g-flex(flex, flex-end, center);
+        padding: 6px;
+        h4 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: $fsize01;
+            color: $color09;
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .t2 {
+            margin-left: $fsize03;
+            margin-right: 11px;
+        }
+        .google-grid {
+            width: 26px;
+            height: $size08;
+            margin-top: 4px;
+            margin-right: 6px;
+            color: $color08;
+            &:hover {
+                background-color: $color05;
+                border-radius: 50%;
+            }
+        }
+        img {
+            border-radius: 50%;
+            margin-right: 10px;
+            margin-left: $fsize03;
+        }
     }
-    .t2 {
-      margin-left: $fsize03;
-      margin-right: 11px;
-    }
-    .google-grid {
-      width: 26px;
-      height: $size08;
-      margin-top: 4px;
-      margin-right: 6px;
-      color: $color08;
-      &:hover {
-        background-color: $color05;
-        border-radius: 50%;
-      }
-    }
-    img {
-      border-radius: 50%;
-      margin-right: 10px;
-      margin-left:  $fsize03;
-    }
-  }
 }
 .section-2 {
-  margin-top: $size07;
-  .container {
-    @extend %container-size;
-    .content-box {
-      @include g-flex (flex, flex-end, center);
-      flex-direction: column;
-      max-width: $size03;
-      margin: 0 auto;
-      img {
-        width: $size02;
-        margin-top: 41px;
-        margin-bottom: 28px;
-        @media (max-width: 663px) {
-          width: 240px;
+    margin-top: $size07;
+    .container {
+        @extend %container-size;
+        .content-box {
+            @include g-flex(flex, flex-end, center);
+            flex-direction: column;
+            max-width: $size03;
+            margin: 0 auto;
+            img {
+                width: $size02;
+                margin-top: 41px;
+                margin-bottom: 28px;
+                @media (max-width: 663px) {
+                    width: 240px;
+                }
+                @media (max-width: 584px) {
+                    width: 210px;
+                }
+                @media (max-width: 470px) {
+                    width: 180px;
+                }
+                @media (max-width: 420px) {
+                    width: 150px;
+                }
+                @media (max-width: 380px) {
+                    width: 120px;
+                }
+            }
+            .input-box {
+                position: relative;
+                @media (max-width: 663px) {
+                    width: 482px;
+                }
+                @media (max-width: 500px) {
+                    width: 450px;
+                }
+                @media (max-width: 470px) {
+                    width: 400px;
+                }
+                @media (max-width: 420px) {
+                    width: 350px;
+                }
+                @media (max-width: 380px) {
+                    width: 290px;
+                }
+                input {
+                    width: 582px;
+                    height: 44px;
+                    padding-left: 50px;
+                    border: 1px solid #dfe1e5;
+                    border-radius: 24px;
+                    margin-bottom: $size12;
+                    &:hover {
+                        background-color: #fff;
+                        box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+                        border-color: rgba(223, 225, 229, 0);
+                    }
+                    @media (max-width: 663px) {
+                        width: 482px;
+                        margin: 0 auto;
+                    }
+                    @media (max-width: 500px) {
+                        width: 450px;
+                        height: 40px;
+                    }
+                    @media (max-width: 470px) {
+                        width: 400px;
+                        height: 38px;
+                    }
+                    @media (max-width: 420px) {
+                        width: 350px;
+                    }
+                    @media (max-width: 380px) {
+                        width: 290px;
+                        height: 37px;
+                    }
+                }
+                .fa-magnifying-glass {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    color: $color05;
+                    font-size: $fsize02;
+                    padding: $fsize03 $size04 0px $size12;
+                    @media (max-width: 380px) {
+                        font-size: 12px;
+                        padding-top: 13px;
+                    }
+                }
+                .voice {
+                    position: absolute;
+                    top: -28px;
+                    right: 60px;
+                    width: $fsize02;
+                    @media (max-width: 500px) {
+                        width: 13px;
+                    }
+                    @media (max-width: 470px) {
+                        width: 12px;
+                        right: 50px;
+                    }
+                    @media (max-width: 420px) {
+                        width: 11px;
+                    }
+                    @media (max-width: 380px) {
+                        width: 10px;
+                        right: 40px;
+                    }
+                }
+            }
+            .camera {
+                position: absolute;
+                top: -30px;
+                right: $size04;
+                width: 24px;
+                @media (max-width: 500px) {
+                    width: 20px;
+                }
+                @media (max-width: 470px) {
+                    width: 18px;
+                }
+                @media (max-width: 420px) {
+                    width: 18px;
+                }
+                @media (max-width: 380px) {
+                    width: 17px;
+                }
+            }
         }
-        @media (max-width:584px) {
-          width: 210px;
-        }
-        @media (max-width:470px) {
-          width:180px;
-        }
-        @media (max-width:420px) {
-          width:150px;
-        }
-        @media (max-width:380px) {
-          width:120px;
-        }
-      }
-      .input-box {
-        position: relative;
-        @media (max-width: 663px) {
-          width: 482px;
-        }
-        @media (max-width:500px) {
-          width:450px;
-        }
-        @media (max-width:470px) {
-          width:400px;
-        }
-        @media (max-width:420px) {
-          width:350px;
-        }
-        @media (max-width:380px) {
-          width:290px;
-        }
-      input {
-        width: 582px;
-        height: 44px;
-        padding-left:50px;
-        border: 1px solid #dfe1e5;
-        border-radius: 24px;
-        margin-bottom: $size12;
-        &:hover {
-          background-color: #fff;
-          box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
-          border-color: rgba(223,225,229,0);
-        }
-        @media (max-width: 663px) {
-          width: 482px;
-          margin: 0 auto;
-        }
-        @media (max-width:500px) {
-          width:450px;
-          height: 40px;
-        }
-        @media (max-width:470px) {
-          width:400px;
-          height: 38px;
-        }
-        @media (max-width:420px) {
-          width:350px;
-        }
-        @media (max-width:380px) {
-          width:290px;
-          height: 37px;
-        }
-      }
-      .fa-magnifying-glass {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        color: $color05;
-        font-size: $fsize02;
-        padding: $fsize03 $size04 0px $size12;
-        @media (max-width:380px) {
-         font-size: 12px;
-         padding-top: 13px;
-        }
-      }
-      .voice {
-        position: absolute;
-        top: -28px;
-        right: 60px;
-        width: $fsize02;
-        @media (max-width:500px) {
-          width: 13px;
-        }
-        @media (max-width:470px) {
-          width: 12px;
-          right: 50px;
-        }
-        @media (max-width:420px) {
-          width: 11px;
-        }
-        @media (max-width:380px) {
-          width: 10px;
-          right: 40px;
-        }
-      }
-      }
-      .camera {
-        position: absolute;
-        top: -30px;
-        right: $size04;
-        width: 24px;
-        @media (max-width:500px) {
-          width: 20px;
-        }
-        @media (max-width:470px) {
-          width: 18px;
-        }
-        @media (max-width:420px) {
-          width: 18px;
-        }
-        @media (max-width:380px) {
-          width: 17px;
-        }
-      }
-      }
     }
-      .btn-box {
-        @include g-flex (flex, center, center);
+    .btn-box {
+        @include g-flex(flex, center, center);
         width: $size03;
         height: $size10;
         @media (max-width: 663px) {
-          display: none;
+            display: none;
         }
         .btn {
-          font-size: $fsize02;
-          color: $color10;
-          background-color: $color02;
-          margin: $fsize02 6px;
-          padding: 0 $size04;
-          height: 36px;
-          border: none;
-          border-radius: 4px;
-          cursor: pointer;
-          border: 1px solid transparent;
-          &:hover {
-            border: 1px solid #dfe1e5;
-          }
+            font-size: $fsize02;
+            color: $color10;
+            background-color: $color02;
+            margin: $fsize02 6px;
+            padding: 0 $size04;
+            height: 36px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            border: 1px solid transparent;
+            &:hover {
+                border: 1px solid #dfe1e5;
+            }
         }
-      }
-      .langs {
+    }
+    .langs {
         font-size: $fsize01;
         color: $color11;
         font-family: Arial, Helvetica, sans-serif;
         margin-top: $size01;
-      }
-      .t-a {
+    }
+    .t-a {
         font-size: $fsize01;
         color: #1a0dab;
         padding: 0px 3px;
         &:hover {
-          text-decoration: underline;
+            text-decoration: underline;
         }
-      }
-      @media (max-width: 663px) {
+    }
+    @media (max-width: 663px) {
         width: 484px;
         margin: 0 auto;
-      }
-      @media (max-width: 584px) {
+    }
+    @media (max-width: 584px) {
         width: 482px;
         margin: 0 auto;
-      }
-      @media (max-width:500px) {
-        width:450px;
-      }
-      @media (max-width:470px) {
-        width:400px;
-      }
-      @media (max-width:420px) {
-        width:350px;
-      }
-      @media (max-width:380px) {
-        width:300px;
-      }
     }
+    @media (max-width: 500px) {
+        width: 450px;
+    }
+    @media (max-width: 470px) {
+        width: 400px;
+    }
+    @media (max-width: 420px) {
+        width: 350px;
+    }
+    @media (max-width: 380px) {
+        width: 300px;
+    }
+}
 .footer {
-  height: $size09;
-  width: 100%;
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
-  background-color: $color03;
-  @media (max-width: 663px) {
-    height: 141px;
-  }
-  .georgia {
-    font-size: $fsize03;
-    color: $color06;
-    padding: $fsize03 $size11;
-    border-bottom: 1px solid #dadce0;
-  }
-  .list-box {
-    @include g-flex(flex, space-between, center);
+    height: $size09;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background-color: $color03;
     @media (max-width: 663px) {
-     flex-direction: column;
-    @include g-flex(flex, space-evenly, center);
+        height: 141px;
     }
-      ul {
-      display: flex;
-      padding: 0px $size01;
-        li {
-        padding: $fsize03;
-          a {
-          font-size: $fsize02;
-          color: $color06;
+    .georgia {
+        font-size: $fsize03;
+        color: $color06;
+        padding: $fsize03 $size11;
+        border-bottom: 1px solid #dadce0;
+    }
+    .list-box {
+        @include g-flex(flex, space-between, center);
+        @media (max-width: 663px) {
+            flex-direction: column;
+            @include g-flex(flex, space-evenly, center);
         }
-      }
+        ul {
+            display: flex;
+            padding: 0px $size01;
+            li {
+                padding: $fsize03;
+                a {
+                    font-size: $fsize02;
+                    color: $color06;
+                }
+            }
+        }
     }
-  }
 }
